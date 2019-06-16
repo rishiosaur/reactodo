@@ -41,6 +41,7 @@ export default class TaskDisplay extends React.Component {
                       marginLeft: "auto",
                       marginRight: "auto"
                     }}
+                    size="small"
                   >
                     <CardContent>
                       <Typography variant="h4">
@@ -70,13 +71,13 @@ export default class TaskDisplay extends React.Component {
                         >
                           <ExpandMoreIcon />
                         </IconButton>
-                        
-                      </ButtonGroup><IconButton
-                          color="secondary"
-                          onClick={() => this.props.deleteTask(index)}
-                        >
-                          <DeleteIcon />
-                        </IconButton>
+                      </ButtonGroup>
+                      <IconButton
+                        color="secondary"
+                        onClick={() => this.props.deleteTask(index)}
+                      >
+                        <DeleteIcon />
+                      </IconButton>
                     </CardActions>
                   </Card>
                 </div>
